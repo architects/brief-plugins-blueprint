@@ -1,0 +1,47 @@
+{
+  "name": "brief-plugins-blueprint",
+  "version": "1.0.0",
+  "description": "A plugin for brief which provides models for a software blueprint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/architects/brief-plugins-blueprint.git"
+  },
+  "keywords": [
+    "brief",
+    "markdown",
+    "product",
+    "design",
+    "project",
+    "management",
+    "productivity"
+  ],
+  "author": "Jonathan Soeder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/architects/brief-plugins-blueprint/issues"
+  },
+  "homepage": "https://github.com/architects/brief-plugins-blueprint#readme",
+  "dependencies": {
+    "glob-all": "latest",
+    "underscore": "latest",
+    "underscore.string": "latest"
+  },
+  "devDependencies": {
+    "babel": "^5.1.13",
+    "babel-runtime": "^5.8.20",
+    "coffee-script": "^1.10.0",
+    "colors": "latest",
+    "mocha": "^2.3.0",
+    "mocha-babel": "^3.0.0",
+    "node-inspector": "latest",
+    "should": "^7.1.0",
+    "brief-node": "^2.2.0"
+  },
+  "babel": {
+    "sourceMaps": "inline"
+  }
+}
