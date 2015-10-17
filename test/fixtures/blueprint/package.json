@@ -1,0 +1,10 @@
+{
+  "name": "The Blueprint.io Blueprint",
+  "version": "1.0.0",
+  "description": "Blueprint.io. Strategy and Execution",
+  "main": "index.js",
+  "author": "Jonathan Soeder",
+  "dependencies": {
+    "brief-plugins-blueprint": "latest"
+  }
+}
