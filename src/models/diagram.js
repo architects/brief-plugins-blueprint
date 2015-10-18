@@ -6,7 +6,10 @@ attributes(
   "path",
   "status",
   "format",
-  "asset"
+  "asset",
+  "project"
 )
+
+belongsTo("project", {references:"title"})
 
 exports = close()

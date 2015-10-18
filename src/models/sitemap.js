@@ -2,8 +2,11 @@ define("Sitemap")
 
 attributes(
   "title",
-  "project_title",
+  "project",
   "asset"
 )
+
+belongsTo("project", {references:"title"})
+hasMany("wireframes", {key:"title", foreignKey:"sitemap"})
 
 exports = close()
