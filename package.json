@@ -1,6 +1,6 @@
 {
   "name": "brief-plugins-blueprint",
-  "version": "2.7.0",
+  "version": "2.7.3",
   "description": "A plugin for brief which provides models for a software blueprint",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,8 @@
   "dependencies": {
     "glob-all": "latest",
     "underscore": "latest",
-    "underscore.string": "latest"
+    "underscore.string": "latest",
+    "i": "latest"
   },
   "devDependencies": {
     "babel": "^5.1.13",
