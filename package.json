@@ -1,6 +1,6 @@
 {
   "name": "brief-plugins-blueprint",
-  "version": "2.7.8",
+  "version": "2.7.9",
   "description": "A plugin for brief which provides models for a software blueprint",
   "main": "index.js",
   "scripts": {
