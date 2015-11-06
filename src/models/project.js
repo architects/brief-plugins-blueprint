@@ -1,5 +1,7 @@
 define("Project")
 
+description("Projects usually correspond to a single codebase. Different types of projects typically used are APIs, Websites, Mobile Applications, but can be anything.")
+
 attributes(
   "title",
   "status",

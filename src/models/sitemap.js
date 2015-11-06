@@ -1,5 +1,7 @@
 define("Sitemap")
 
+description("Sitemaps lay out the hierarchy of pages on a Website, but can also be used to display API routes, Mobile App Screens, etc.")
+
 attributes(
   "title",
   "project",

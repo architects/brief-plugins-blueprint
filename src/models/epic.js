@@ -1,5 +1,7 @@
 define("Epic")
 
+description("Epics are logical groupings of user stories that belong to or span multiple projects.") 
+
 attributes(
   "title", 
   "status", 
