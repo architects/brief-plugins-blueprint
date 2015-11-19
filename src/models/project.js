@@ -13,4 +13,19 @@ hasMany("epics", {key: "title", foreignKey: "project"})
 hasMany("sitemaps", {key: "title", foreignKey: "project"})
 hasMany("wireframes", {key: "title", foreignKey: "project"})
 
+section("Epics")
+  .aka("Modules")
+  .hasMany("Epics",{
+    title: "h3"
+  })
+
+section("Milestones")
+  .hasMany("Milestones",{
+    title: "h3"
+  })
+
+action("create_epics", function(){
+  var project = this;
+})
+
 exports = close()

@@ -24,4 +24,5 @@ console: compile
 		--require ./test/console
 
 compile:
-	babel -q -d lib src
+	babel --source-maps=false -q -d lib src 
+	babel --source-maps=false -q -d include/views/lib include/views/src

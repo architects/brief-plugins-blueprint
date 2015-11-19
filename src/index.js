@@ -5,6 +5,7 @@ var inflections = require('i')()
 const model_files = glob.sync(path.join(__dirname,'models') + '/**/*.js')
 
 export default function plugin(brief, options={}){
+	
   function modifier(briefcase, options={}){
     plugin.model_files.forEach(file => briefcase.loadModelDefinition(file))
   }
