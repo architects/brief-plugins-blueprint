@@ -2,12 +2,19 @@ var path = require('path')
 var glob = require('glob-all')
 var manifest = require("../package.json")
 var inflections = require('i')()
+
+const command_files = glob.sync(path.join(__dirname,'commands') + '/**/*.js')
 const model_files = glob.sync(path.join(__dirname,'models') + '/**/*.js')
+const query_files = glob.sync(path.join(__dirname,'queries') + '/**/*.js')
+const view_files = glob.sync(path.join(__dirname,'views') + '/**/*.js')
 
 export default function plugin(brief, options={}){
 	
   function modifier(briefcase, options={}){
     plugin.model_files.forEach(file => briefcase.loadModelDefinition(file))
+    plugin.definitions.commands.forEach(file => briefcase.commands.fromPath(file))
+    plugin.definitions.queries.forEach(file => briefcase.queries.fromPath(file))
+    plugin.definitions.views.forEach(file => briefcase.views.fromPath(file))
   }
 
   Object.defineProperty(modifier, 'groupNames', {
@@ -24,6 +31,17 @@ export default function plugin(brief, options={}){
 
   return modifier
 }
+
+Object.defineProperty(plugin, 'definitions', {
+  get: function(){
+    return {
+      models: model_files,
+      commands: command_files,
+      views: view_files,
+      queries: query_files
+    }
+  }
+})
 
 plugin.model_files = model_files
 
