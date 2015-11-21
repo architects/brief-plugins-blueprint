@@ -1,6 +1,6 @@
 {
   "name": "brief-plugins-blueprint",
-  "version": "3.5.0",
+  "version": "3.6.1",
   "description": "A plugin for brief which provides models for a software blueprint",
   "main": "index.js",
   "scripts": {
@@ -40,7 +40,7 @@
     "mocha-babel": "^3.0.0",
     "node-inspector": "latest",
     "should": "^7.1.0",
-    "brief-node": "^3.5.0"
+    "brief-node": "^3.6.0"
   },
   "babel": {
     "sourceMaps": "inline"
